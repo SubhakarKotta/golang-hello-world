@@ -49,5 +49,5 @@ func main() {
 	router.Handle("/hello/{name}", SayHello(greeting_summary))
 	router.Handle("/metrics", promhttp.Handler())
 	prometheus.Register(greeting_summary)
-	log.Fatal(http.ListenAndServe(":8080", router))
+	log.Fatal(http.ListenAndServe(":80", router))
 }
