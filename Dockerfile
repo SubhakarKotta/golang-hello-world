@@ -1,4 +1,4 @@
-FROM golang:1.12.0-alpine3.9
+FROM golang:latest
 ARG VCS_REF
 ARG BUILD_DATE
 
